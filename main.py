@@ -14,10 +14,16 @@ def get_bot_response(user_response):
 print("Welcome to Valorant Bot")
 print("Please enter if you play or not")
 
-user_response = input("Do you play valorant?: ")
+user_response = ""
 
-bot_response = get_bot_response(user_response)
-print(bot_response)
+while True:
+    user_response = input("Do you play valorant?: ").lower()
+
+    if user_response == 'done':
+        break
+
+    bot_response = get_bot_response(user_response)
+    print(bot_response)
 
 
 
