@@ -1,4 +1,4 @@
-# import the random function to generate a random number/response/string
+# import the choice function from random to select a random element in a list
 from random import choice
 
 # creating a function to responsed to the given user response
